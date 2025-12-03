@@ -23,7 +23,7 @@ int main(void)
   fprintf(stdout, "--------------------------------------------------------\n");
 
   /* 2.1 Create an empty playlist with default values (NULL). */
-  playlist_t playlist;
+  playlist_t playlist = { NULL, NULL };
 
   /* 2.2 Add a song to the playlist */
   if (! playlist_add_song(&playlist, "Rick Astley", "Never gonna give you up", 214))
