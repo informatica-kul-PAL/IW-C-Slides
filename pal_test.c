@@ -144,7 +144,7 @@ static void pal_test_playlist_remove_song(void)
     NULL
   };
 
-  playlist_remove_song(&playlist, "Kaslai", "Program in C");
+  playlist_remove_song(&playlist, "Program in C", "Kaslai");
 
   TEST(playlist.queue == &node2);
 }
