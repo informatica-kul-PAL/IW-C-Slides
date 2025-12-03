@@ -50,8 +50,8 @@ static void pal_test_song_to_string(void)
   char str[120];
 
   song_t song = {
-    "Kaslai",
     "Program in C",
+    "Kaslai",
     51
   };
 
@@ -125,8 +125,8 @@ static void pal_test_playlist_remove_song(void)
   song1->duration = 51;
   
   song_t song2 = {
-    "Michael Littman",
     "The Sorter",
+    "Michael Littman",
     212
   };
 
@@ -153,14 +153,14 @@ static void pal_test_playlist_remove_song(void)
 static void pal_test_playlist_move_song_to_front(void)
 {
   song_t song1 = {
-    "Kaslai",
     "Program in C",
+    "Kaslai",
     51
   };  
 
   song_t song2 = {
-    "Michael Littman",
     "The Sorter",
+    "Michael Littman",
     212
   };
 
@@ -190,14 +190,14 @@ static void pal_test_playlist_move_song_to_front(void)
 static void pal_test_play_next(void)
 {
   song_t song1 = {
-    "Kaslai",
     "Program in C",
+    "Kaslai",
     51
   };  
 
   song_t song2 = {
-    "Michael Littman",
     "The Sorter",
+    "Michael Littman",
     212
   };
 
@@ -226,20 +226,20 @@ static void pal_test_play_next(void)
 static void pal_test_playlist_reverse(void)
 {
   song_t song1 = {
-    "Kaslai",
     "Program in C",
+    "Kaslai",
     51
   };
 
   song_t song2 = {
-    "Michael Littman",
     "The Sorter",
+    "Michael Littman",
     212
   };
 
   song_t song3 = {
-    "Rick Astley",
     "Never Gonna Give You Up",
+    "Rick Astley",
     214
   };
 
