@@ -77,7 +77,7 @@ static void pal_test_playlist_add_song(void)
 {
   playlist_t playlist = {NULL, NULL};
 
-  playlist_add_song(&playlist, "Kaslai", "Program in C", 51);
+  playlist_add_song(&playlist, "Program in C", "Kaslai", 51);
 
   TEST(playlist.queue != NULL);
   if (playlist.queue != NULL) {
@@ -90,7 +90,7 @@ static void pal_test_playlist_add_song(void)
     }
   }
 
-  playlist_add_song(&playlist, "Michael Littman", "The Sorter", 212);
+  playlist_add_song(&playlist, "The Sorter", "Michael Littman", 212);
 
   TEST(playlist.queue != NULL);
   if (playlist.queue != NULL) {
