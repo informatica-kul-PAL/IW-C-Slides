@@ -26,7 +26,7 @@ int main(void)
   playlist_t playlist = { NULL, NULL };
 
   /* 2.2 Add a song to the playlist */
-  if (! playlist_add_song(&playlist, "Rick Astley", "Never gonna give you up", 214))
+  if (playlist_add_song(&playlist, "Rick Astley", "Never gonna give you up", 214) != 0)
   {
       fprintf(stderr, "playlist_add_song() failed\n");
   }
