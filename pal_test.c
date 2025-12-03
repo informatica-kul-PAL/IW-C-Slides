@@ -75,7 +75,7 @@ static void pal_test_playlist_length(void)
 /****************************************************************************/
 static void pal_test_playlist_add_song(void)
 {
-  playlist_t playlist;
+  playlist_t playlist = {NULL, NULL};
 
   playlist_add_song(&playlist, "Kaslai", "Program in C", 51);
 
