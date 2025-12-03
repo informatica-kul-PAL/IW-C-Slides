@@ -57,7 +57,7 @@ static void pal_test_song_to_string(void)
 
   song_to_string(&song, str, sizeof(str));
 
-  TEST(strncmp(str, "Kaslai - Program in C ( 0:51)", sizeof(str)) == 0);
+  TEST(strcmp(str, "Kaslai - Program in C ( 0:51)") = 0);
 }
 
 /****************************************************************************/
