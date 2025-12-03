@@ -26,7 +26,7 @@ int main(void)
   playlist_t playlist = { NULL, NULL };
 
   /* 2.2 Add a song to the playlist */
-  if (playlist_add_song(&playlist, "Rick Astley", "Never gonna give you up", 214) != 0)
+  if (playlist_add_song(&playlist, "Never gonna give you up", "Rick Astley", 214) != 0)
   {
       fprintf(stderr, "playlist_add_song() failed\n");
   }
@@ -36,8 +36,8 @@ int main(void)
       * NOTE: In general it is bad practice to ignore the return code of
       *       functions. We do it here to keep the example code compact.
       */
-  (void) playlist_add_song(&playlist, "Kaslai", "Program in C", 51);
-  (void) playlist_add_song(&playlist, "Michael Littman", "The Sorter", 212);
+  (void) playlist_add_song(&playlist, "Program in C", "Kaslai", 51);
+  (void) playlist_add_song(&playlist, "The Sorter", "Michael Littman", 212);
 
   /* 2.4 Print the playlist */
   playlist_print(&playlist);
